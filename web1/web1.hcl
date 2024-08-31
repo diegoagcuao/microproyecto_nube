@@ -1,0 +1,9 @@
+server = true
+node_name = "web1"
+bootstrap_expect = 1
+data_dir = "/opt/consul"
+bind_addr = "0.0.0.0"
+client_addr = "0.0.0.0"
+advertise_addr = "192.168.56.11"  # Dirección IP específica de web1
+retry_join = ["192.168.56.10", "192.168.56.12"]
+ui = true

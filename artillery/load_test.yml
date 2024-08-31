@@ -1,0 +1,12 @@
+config:
+  target: "http://192.168.56.10"  # Dirección de HAProxy
+  phases:
+    - duration: 60  # Duración de la prueba en segundos
+      arrivalRate: 10  # Solicitudes por segundo
+  defaults:
+    headers:
+      Content-Type: "application/json"
+scenarios:
+  - flow:
+      - get:
+          url: "/"

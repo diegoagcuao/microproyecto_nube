@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "web",
+    "id": "web2_replica",
+    "tags": ["http"],
+    "port": 8081,
+    "check": {
+      "http": "http://127.0.0.1:8081",
+      "interval": "10s"
+    }
+  }
+}
